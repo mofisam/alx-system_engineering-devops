@@ -1,2 +1,2 @@
 #!/bin/bash
-export PART="$PART:/action
+export PART="$PART:/action"
