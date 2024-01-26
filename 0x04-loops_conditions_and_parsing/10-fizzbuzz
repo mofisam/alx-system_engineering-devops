@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
-#fizzbuzz stuf
+# displays Best School 10 times.
 
-count=1
-while [ $count -ne 101 ]
+COUNTER=1
+while [ $COUNTER -lt 101 ]
 do
-    if [ $((count % 15)) -eq 0 ]
+    if [ $((COUNTER%15)) = 0 ]
     then
-	echo "FizzBuzz"
-    elif [ $((count % 3)) -eq 0 ]
+        echo "FizzBuzz"
+    elif [ $((COUNTER%3)) = 0 ]
     then
-	echo "Fizz"
-    elif [ $((count % 5)) -eq 0 ]
+        echo "Fizz"
+    elif [ $((COUNTER%5)) = 0 ]
     then
         echo "Buzz"
     else
-	echo $count
+        echo "$COUNTER"
     fi
-    ((count++))
+    let COUNTER+=1
 done
